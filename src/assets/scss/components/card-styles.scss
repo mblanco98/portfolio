@@ -1,0 +1,9 @@
+@import '../base/variables';
+
+.i-card {
+  background-color: $primary--variant-1;
+  max-width: 58.92em;
+  &.md:not(.i-card__inner) {
+    max-width: 25.42em;
+  }
+}

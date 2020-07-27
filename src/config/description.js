@@ -1,0 +1,8 @@
+const description = {
+  greeting: "Hello, I'm",
+  name: 'Manuel Blanco',
+  presentation:
+    "I'm a Front End Developer currently working as the <br/> main Front End Developer at <a href='https://www.infrapedia.com' target='_blank'>Infrapedia Inc.</a> I'm <br/> focused on UX/UI development, I love Vue.js and <br/> I'm a CSS nerd. I am a fan of technology, design, <br/> and coffee. I sometimes share what I know on <br/> dev.to or simply tweet about it."
+}
+
+export default description

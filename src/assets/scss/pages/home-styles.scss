@@ -1,0 +1,14 @@
+.main-wrapper {
+  width: 72vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 32rem 1fr;
+
+  .left {
+    position: fixed;
+  }
+  .right {
+    grid-column: 2;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@300;400;500&display=swap');
+@import '../scss/helpers/atomic-classes';
+@import '../scss/base/variables';
+
+body,
+html,
+#app {
+  font-family: 'Roboto', sans-serif;
+  background-color: $primary;
+  color: $text-color;
+}
+
+::selection {
+  background-color: lighten($primary, 30%);
+  color: darken($primary, 4%);
+}
+
+a {
+  color: $text-color;
+}
