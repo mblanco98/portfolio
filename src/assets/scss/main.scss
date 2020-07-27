@@ -8,6 +8,7 @@ html,
   font-family: 'Roboto', sans-serif;
   background-color: $primary;
   color: $text-color;
+  overflow: hidden;
 }
 
 ::selection {
@@ -17,4 +18,8 @@ html,
 
 a {
   color: $text-color;
+  text-decoration: none;
+  &:hover {
+    color: lighten($text-color, 15%);
+  }
 }

@@ -2,13 +2,41 @@
   width: 72vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 32rem 1fr;
+  grid-template-columns: 1.4fr 2.8fr;
+  overflow: hidden;
+  box-shadow: 0 6px 20px 0px #323232;
+
+  .svg-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 120vw;
+    top: 0;
+    left: 0;
+    transform: translateY(-42.4rem) translateX(-16rem);
+  }
 
   .left {
     position: fixed;
+    height: 60vh;
+    width: 20vw;
+    .social-bar-wrapper {
+      margin-left: -1rem;
+      height: 70rem;
+      width: 95%;
+    }
   }
   .right {
     grid-column: 2;
-    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 96vh;
+    padding-right: 2rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    .pens-wrapper {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

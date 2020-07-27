@@ -10,10 +10,6 @@
 export default {
   name: 'ICard',
   props: {
-    lg: {
-      type: Boolean,
-      default: () => true
-    },
     md: {
       type: Boolean,
       default: () => false
