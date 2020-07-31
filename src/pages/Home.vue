@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="main-wrapper pt12 pb12 pl4 pr4 z-index4">
-      <!-- <div class="divider horizontal" /> -->
       <aside class="left">
         <i-greet />
         <nav>
@@ -59,7 +58,7 @@
         </div>
       </div>
     </div>
-    <div class="svg-wrapper" id="top-svg">
+    <svg-wrapper id="top-svg" class="svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -91,8 +90,8 @@
           />
         </g>
       </svg>
-    </div>
-    <div class="svg-wrapper" id="bottom-svg">
+    </svg-wrapper>
+    <svg-wrapper id="bottom-svg" class="svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -124,7 +123,7 @@
           />
         </g>
       </svg>
-    </div>
+    </svg-wrapper>
   </div>
 </template>
 
@@ -138,6 +137,7 @@ export default {
   components: {
     ICard: () => import('../components/Card.vue'),
     IGreet: () => import('../components/Greet.vue'),
+    SvgWrapper: () => import('../components/SvgWrapper'),
     ISocialBar: () => import('../components/SocialBar.vue')
   },
   computed: {

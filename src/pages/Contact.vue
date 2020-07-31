@@ -1,7 +1,44 @@
 <template>
   <div class="main-wrapper">
-    <router-link to="/">
-      Home
+    <router-link to="/" id="home-link" class="mb2">
+      <svg-wrapper size="xl" :custom-class="{ svg: true }">
+        <svg
+          xmlns:svg="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 125"
+          x="0px"
+          fill="currentColor"
+          y="0px"
+          version="1.1"
+        >
+          <metadata id="metadata22">
+            <rdf:RDF>
+              <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                  rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                />
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <defs id="defs20" />
+          <path
+            d="M63,72.69H37a7.51,7.51,0,0,1-7.5-7.5v-16a2.5,2.5,0,1,1,5,0v16a2.5,2.5,0,0,0,2.5,2.5H63a2.5,2.5,0,0,0,2.5-2.5v-16a2.5,2.5,0,1,1,5,0v16A7.51,7.51,0,0,1,63,72.69Z"
+            id="path4"
+          />
+          <path
+            d="M71.92,46.15a2.49,2.49,0,0,1-1.6-.58L51.93,30.19,51.77,30a2.5,2.5,0,0,0-3.54,0l-.16.15L29.68,45.57a2.5,2.5,0,0,1-3.21-3.83L44.78,26.42a7.51,7.51,0,0,1,10.43,0L73.52,41.74a2.5,2.5,0,0,1-1.61,4.42Z"
+            id="path6"
+          />
+          <path
+            d="M50,95A45,45,0,1,1,76.36,13.53a2.5,2.5,0,0,1-2.93,4,40,40,0,1,0,11,12,2.5,2.5,0,0,1,4.3-2.55A45,45,0,0,1,50,95Z"
+            id="path8"
+          />
+          <path
+            d="M81.89,24.4A2.49,2.49,0,0,1,80,23.56q-.63-.71-1.28-1.39a2.5,2.5,0,1,1,3.59-3.48q.74.76,1.44,1.56a2.5,2.5,0,0,1-1.87,4.15Z"
+            id="path10"
+          />
+        </svg>
+      </svg-wrapper>
     </router-link>
     <div class="left">
       <h3 class="text-gray font-thin uppercase">Contact</h3>
@@ -57,6 +94,9 @@ export default {
   name: 'Contact',
   metaInfo: {
     title: 'Contact - Manuel Blanco Front End Developer'
+  },
+  components: {
+    SvgWrapper: () => import('../components/SvgWrapper')
   },
   data: () => ({
     buttonOutline: {

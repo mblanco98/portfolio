@@ -27,21 +27,3 @@ a {
     color: lighten($text-color, 15%);
   }
 }
-
-.svg-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  overflow: hidden;
-  &#top-svg {
-    transform: translateY(-42.4rem) translateX(-16rem);
-  }
-  &#bottom-svg {
-    position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    left: 0;
-    transform: translateY(20vh) translateX(-70rem);
-  }
-}

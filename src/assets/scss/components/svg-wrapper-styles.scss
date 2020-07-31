@@ -1,0 +1,23 @@
+.svg-wrapper {
+  overflow: hidden;
+  &.sm {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+  &.md {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  &.lg {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+  }
+  &.xl {
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+  }
+}

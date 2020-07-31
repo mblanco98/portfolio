@@ -56,3 +56,15 @@
     }
   }
 }
+
+#home-link {
+  color: $text-color;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  left: 44.3vw;
+  transition: scale $transition-regular;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
