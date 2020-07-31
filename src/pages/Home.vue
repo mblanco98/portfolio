@@ -61,34 +61,15 @@
     <svg-wrapper id="top-svg" class="svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="2773.094"
-        height="2758.149"
-        viewBox="0 0 2773.094 2758.149"
+        width="2737.094"
+        height="2722.149"
+        viewBox="0 0 2737.094 2722.149"
       >
-        <defs>
-          <filter
-            id="a"
-            x="0"
-            y="0"
-            width="2773.094"
-            height="2758.149"
-            filterUnits="userSpaceOnUse"
-          >
-            <feOffset dy="10" input="SourceAlpha" />
-            <feGaussianBlur stdDeviation="6" result="b" />
-            <feFlood flood-color="#212121" flood-opacity="0.89" />
-            <feComposite operator="in" in2="b" />
-            <feComposite in="SourceGraphic" />
-          </filter>
-        </defs>
-        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#a)">
-          <path
-            d="M884.633-184.073c334.82-691.7,1542.231,477.837,1321.857,564.51s-664.308,845.412-1213,845.412S0,953.61,0,617.786,549.813,507.626,884.633-184.073Z"
-            transform="matrix(0.72, 0.69, -0.69, 0.72, 869.55, 297.06)"
-            fill="#262626"
-          />
-        </g>
+        <path
+          d="M884.633-184.073c334.82-691.7,1542.231,477.837,1321.857,564.51s-664.308,845.412-1213,845.412S0,953.61,0,617.786,549.813,507.626,884.633-184.073Z"
+          transform="matrix(0.719, 0.695, -0.695, 0.719, 851.546, 289.056)"
+          fill="#262626"
+        />
       </svg>
     </svg-wrapper>
     <svg-wrapper id="bottom-svg" class="svg">
