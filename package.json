@@ -11,7 +11,10 @@
     "core-js": "^3.6.5",
     "normalize.css": "^8.0.1",
     "register-service-worker": "^1.7.1",
-    "vue": "^2.6.11"
+    "scenejs": "^1.2.0",
+    "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

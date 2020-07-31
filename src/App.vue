@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <home />
+    <transition
+      tag="div"
+      mode="out-in"
+      name="animated faster"
+      leave-active-class="fadeOut"
+      enter-active-class="fadeIn"
+    >
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -8,10 +16,7 @@
 import 'normalize.css'
 
 export default {
-  name: 'App',
-  components: {
-    Home: () => import('./pages/Home')
-  }
+  name: 'App'
 }
 </script>
 

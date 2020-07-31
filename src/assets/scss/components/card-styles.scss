@@ -3,7 +3,13 @@
 .i-card {
   background-color: $primary--variant-1;
   max-width: 58.69rem;
-  &.md:not(.i-card__inner) {
-    max-width: 25.32rem;
+  &:not(.i-card__inner) {
+    &.md {
+      max-width: 25.32rem;
+    }
+    transition: transform 120ms ease-in;
+    &:hover {
+      transform: scale(1.004);
+    }
   }
 }

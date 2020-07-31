@@ -1,38 +1,55 @@
-.main-wrapper {
-  width: 72vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 2.8fr;
-  overflow: hidden;
-  box-shadow: 0 6px 20px 0px #323232;
+@import '../base/variables';
 
-  .svg-wrapper {
-    position: absolute;
-    overflow: hidden;
-    width: 120vw;
-    top: 0;
+.main-wrapper {
+  position: absolute;
+  width: 80vw;
+  left: 12vw;
+  height: 100%;
+  &::after {
+    background-color: darken($primary, 12%);
+    filter: blur(12px);
+    position: fixed;
+    height: 12px;
+    width: 100%;
+    content: ' ';
+    bottom: 0;
     left: 0;
-    transform: translateY(-42.4rem) translateX(-16rem);
+  }
+  &::before {
+    background-color: darken($primary, 12%);
+    filter: blur(12px);
+    position: fixed;
+    height: 12px;
+    width: 100%;
+    content: ' ';
+    left: 0;
+    top: -4px;
+  }
+
+  .divider {
+    position: relative;
+    grid-column: 1 / 4;
   }
 
   .left {
     position: fixed;
-    height: 60vh;
+    height: 68.5vh;
     width: 20vw;
+    top: 5rem;
+    display: grid;
     .social-bar-wrapper {
-      margin-left: -1rem;
-      height: 70rem;
-      width: 95%;
+      width: 90%;
+      align-self: end;
     }
   }
   .right {
-    grid-column: 2;
-    overflow-y: auto;
-    max-height: 96vh;
-    padding-right: 2rem;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    scroll-behavior: smooth;
+    position: absolute;
+    right: 0;
+    padding-right: 1rem;
+    top: 6.7rem;
+    .header {
+      position: sticky;
+    }
     .pens-wrapper {
       display: grid;
       gap: 2rem;

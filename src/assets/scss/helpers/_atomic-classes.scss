@@ -343,6 +343,26 @@
     font-size: 44px;
   }
 }
+.divider {
+  background-color: #dcdfe6;
+  position: relative;
+  &.horizontal {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 24px 0;
+  }
+}
+
+.highlight {
+  color: #648dff;
+}
+.debug {
+  border: 1px solid red;
+  &:hover {
+    @extend .bottom-shadow;
+  }
+}
 
 @for $i from 1 through 120 {
   $base: 0.25rem;

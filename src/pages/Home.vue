@@ -1,6 +1,65 @@
 <template>
-  <div class="main-wrapper pt12 pb2 pl4 pr4">
-    <div class="svg-wrapper">
+  <div>
+    <div class="main-wrapper pt12 pb12 pl4 pr4 z-index4">
+      <!-- <div class="divider horizontal" /> -->
+      <aside class="left">
+        <i-greet />
+        <nav>
+          <a href="#pens">Pens</a>
+        </nav>
+        <div class="relative social-bar-wrapper flex justify-content-flex-end">
+          <i-social-bar class="social-bar" />
+        </div>
+      </aside>
+      <div class="right">
+        <section id="work">
+          <header>
+            <h1 class="title md mb10">
+              Work
+            </h1>
+          </header>
+          <i-card v-for="(pr, i) in projects" :key="i" class="mb12 p8">
+            <div>
+              <header p0>
+                <h2 class="title fs-medium m0">
+                  {{ pr.name }}
+                </h2>
+              </header>
+              <p class="text-justify">
+                {{ pr.content }}
+              </p>
+            </div>
+          </i-card>
+        </section>
+        <section id="pens" class="mt12 pt4">
+          <header>
+            <h1 class="title md mb10">
+              Pens
+            </h1>
+          </header>
+          <div class="pens-wrapper">
+            <i-card v-for="(pr, i) in pens" :key="i" class="mb12 p8" md>
+              <div>
+                <header p0>
+                  <h2 class="title fs-medium m0">
+                    {{ `${pr.name} ${i}${i}` }}
+                  </h2>
+                </header>
+                <p class="text-justify">
+                  {{ pr.content }}
+                </p>
+              </div>
+            </i-card>
+          </div>
+        </section>
+        <div class="text-right mr5 mt20">
+          <router-link to="/contact">
+            Contact me
+          </router-link>
+        </div>
+      </div>
+    </div>
+    <div class="svg-wrapper" id="top-svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -33,56 +92,38 @@
         </g>
       </svg>
     </div>
-    <div class="left z-index4">
-      <i-greet />
-      <nav>
-        <a href="#pens">Pens</a>
-      </nav>
-      <div class="relative social-bar-wrapper flex justify-content-flex-end">
-        <i-social-bar class="social-bar" />
-      </div>
-    </div>
-    <div class="right mt4 overflow-y-auto no-overflow-x z-index4">
-      <section id="work">
-        <header>
-          <h1 class="title md">
-            Work
-          </h1>
-        </header>
-        <i-card v-for="(pr, i) in projects" :key="i" class="mb12 p8">
-          <div>
-            <header p0>
-              <h2 class="title fs-medium m0">
-                {{ pr.name }}
-              </h2>
-            </header>
-            <p class="text-justify">
-              {{ pr.content }}
-            </p>
-          </div>
-        </i-card>
-      </section>
-      <section id="pens">
-        <header>
-          <h1 class="title md">
-            Pens
-          </h1>
-        </header>
-        <div class="pens-wrapper">
-          <i-card v-for="(pr, i) in pens" :key="i" class="mb12 p8" md>
-            <div>
-              <header p0>
-                <h2 class="title fs-medium m0">
-                  {{ `${pr.name} ${i}${i}` }}
-                </h2>
-              </header>
-              <p class="text-justify">
-                {{ pr.content }}
-              </p>
-            </div>
-          </i-card>
-        </div>
-      </section>
+    <div class="svg-wrapper" id="bottom-svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="2708.384"
+        height="2691.165"
+        viewBox="0 0 2708.384 2691.165"
+      >
+        <defs>
+          <filter
+            id="a"
+            x="0"
+            y="0"
+            width="2708.384"
+            height="2691.165"
+            filterUnits="userSpaceOnUse"
+          >
+            <feOffset dy="10" input="SourceAlpha" />
+            <feGaussianBlur stdDeviation="6" result="b" />
+            <feFlood flood-color="#212121" flood-opacity="0.89" />
+            <feComposite operator="in" in2="b" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+        </defs>
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#a)">
+          <path
+            d="M731.5-152.919C793.11-280.192,1213.156,34.108,1291.57-96.591,1592-751.683,2386.316,309.712,2206.491,380.437c-220.373,86.673-664.308,845.412-1213,845.412S0,953.61,0,617.786,396.682,538.78,731.5-152.919Z"
+            transform="matrix(0.72, 0.69, -0.69, 0.72, 869.55, 230.41)"
+            fill="#262626"
+          />
+        </g>
+      </svg>
     </div>
   </div>
 </template>
@@ -91,9 +132,12 @@
 import { work, pens } from '../config'
 
 export default {
+  metaInfo: {
+    title: 'Home - Manuel Blanco Front End Developer'
+  },
   components: {
-    IGreet: () => import('../components/Greet.vue'),
     ICard: () => import('../components/Card.vue'),
+    IGreet: () => import('../components/Greet.vue'),
     ISocialBar: () => import('../components/SocialBar.vue')
   },
   computed: {

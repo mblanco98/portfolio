@@ -1,11 +1,11 @@
 <template>
-  <aside>
+  <div>
     <h1 class="title lg">
       {{ `${description.greeting}` }} <br />
       {{ `${description.name}` }}.
     </h1>
     <p v-html="description.presentation" />
-  </aside>
+  </div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="nav-wrapper flex row nowrap justify-content-space-between w-fit-full p4"
+    class="nav-wrapper flex row nowrap justify-content-space-between w-fit-full"
   >
     <div v-for="(item, i) in socialLinks" :key="i">
       <div v-if="item.photo" class="logo-wrapper">
