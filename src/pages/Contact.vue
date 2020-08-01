@@ -49,15 +49,15 @@
       <div class="information">
         <h3 class="fs-medium font-regular highlight">Contact Details:</h3>
         <a
-          href="mailto:manuel.22.lamas@gmail.com"
+          :href="`mailto:${contactData.email}`"
           class="font-thin text-md block margin1 hover:underline mb4"
-          >manuel.22.lamas@gmail.com</a
+          >{{ contactData.email }}</a
         >
         <a
-          href="tel: +57 305 3648811"
+          :href="`tel:${contactData.phone}`"
           class="font-thin text-md block margin-top-half-rem hover:underline"
-          >+57 305 3648811</a
-        >
+          >{{ contactData.phone }}
+        </a>
         <footer>© {{ year }} Manuel Blanco</footer>
       </div>
     </div>
@@ -72,11 +72,10 @@
         </h1>
         <div class="inline-block">
           <a
-            :href="buttonOutline.link"
-            :class="{ inverse: buttonOutline.inverse }"
-            class="button-link border-gray-100 text-center font-semibold"
+            :href="`mailto:${contactData.email}`"
+            class="button-link border-gray-100 text-center font-semibold inverse"
           >
-            {{ buttonOutline.label }}
+            {{ contactData.email }}
             <i
               class="icon margin-left-1rem transition inline-block fas arrow-right"
             />
@@ -89,6 +88,7 @@
 
 <script>
 import Scene from 'scenejs'
+import { contact } from '../config'
 
 export default {
   name: 'Contact',
@@ -98,18 +98,13 @@ export default {
   components: {
     SvgWrapper: () => import('../components/SvgWrapper')
   },
-  data: () => ({
-    buttonOutline: {
-      inverse: true,
-      icon: ['fas', 'arrow-right'],
-      link: 'mailto:manuel.22.lamas@gmail.com',
-      label: 'manuel.22.lamas@gmail.com'
-    }
-  }),
   computed: {
     year() {
       const d = new Date()
       return d.getFullYear()
+    },
+    contactData() {
+      return contact
     }
   },
   mounted() {
