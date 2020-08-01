@@ -1,11 +1,15 @@
 aside {
-  max-width: 520px;
+  max-width: 32.5em;
   .title {
-    margin-left: 0.55px;
+    margin-left: 0.034em;
   }
   p {
     line-height: 1.2;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
+  }
+
+  @media screen and (max-width: 64em) {
+    text-transform: capitalize;
   }
 }

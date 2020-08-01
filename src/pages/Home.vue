@@ -1,10 +1,13 @@
 <template>
   <div id="top">
     <div class="main-wrapper pl4 pr4 z-index4">
+      <i-navbar class="hidden-md-and-up mobile-nav" />
       <aside class="left">
         <i-greet />
-        <i-navbar />
-        <div class="relative social-bar-wrapper flex justify-content-flex-end">
+        <i-navbar class="hidden-md-and-down" />
+        <div
+          class="relative social-bar-wrapper flex justify-content-flex-end hidden-md-and-down"
+        >
           <i-social-bar class="social-bar" />
         </div>
       </aside>
@@ -80,7 +83,7 @@
         </div>
       </div>
     </div>
-    <i-svg-wrapper id="top-svg" class="svg">
+    <i-svg-wrapper id="top-svg" class="svg hidden-md-and-down">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="2737.094"
@@ -94,7 +97,7 @@
         />
       </svg>
     </i-svg-wrapper>
-    <i-svg-wrapper id="bottom-svg" class="svg">
+    <i-svg-wrapper id="bottom-svg" class="svg hidden-md-and-down">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
