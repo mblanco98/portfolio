@@ -17,6 +17,8 @@
       border-bottom: 4px solid transparent;
     }
     &:hover {
+      // TODO: the transition should be that the background-color
+      // grows in height from the bottom till the middle of the text
       a {
         color: $primary;
         border-left-color: $primary;

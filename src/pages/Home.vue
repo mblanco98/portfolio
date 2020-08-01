@@ -9,7 +9,7 @@
         </div>
       </aside>
       <div class="right">
-        <section id="work" class="pt4">
+        <section id="work">
           <header>
             <h1 class="title md mb10">
               Work
