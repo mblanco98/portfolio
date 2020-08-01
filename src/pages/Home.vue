@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main-wrapper pt12 pb12 pl4 pr4 z-index4">
+    <div class="main-wrapper pl4 pr4 z-index4">
       <aside class="left">
         <i-greet />
         <nav>
@@ -37,21 +37,46 @@
             </h1>
           </header>
           <div class="pens-wrapper">
-            <i-card v-for="(pr, i) in pens" :key="i" class="mb12 p8" md>
+            <i-card v-for="(pen, i) in pens" :key="i" class="mb12 p3" md>
               <div>
-                <header p0>
+                <header class="pt2 pb4 pl1">
                   <h2 class="title fs-medium m0">
-                    {{ `${pr.name} ${i}${i}` }}
+                    <a :href="pen.src" target="_blank">
+                      {{ pen.name }}
+                      <fa :icon="['fas', 'external-link-alt']" />
+                    </a>
                   </h2>
                 </header>
-                <p class="text-justify">
-                  {{ pr.content }}
+                <p
+                  data-default-tab="result"
+                  :data-pen-title="pen.name"
+                  :data-slug-hash="pen.slug"
+                  data-theme-id="dark"
+                  data-preview="true"
+                  data-user="manAbl"
+                  data-height="420"
+                  class="codepen pen"
+                >
+                  <span
+                    >See the Pen
+                    <a :href="pen.src" target="_blank" class="underline">
+                      {{ pen.name }}
+                      <fa
+                        :icon="['fas', 'external-link-alt']"
+                        class="fs-small"
+                      />
+                    </a>
+                    by mblanco (<a href="https://codepen.io/manAbl">{{
+                      pen.user
+                    }}</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
                 </p>
               </div>
             </i-card>
           </div>
         </section>
-        <div class="text-right mr5 mt20">
+        <div class="text-right mt12" id="contact">
           <router-link to="/contact">
             Contact me
           </router-link>
@@ -113,7 +138,10 @@ import { work, pens } from '../config'
 
 export default {
   metaInfo: {
-    title: 'Home - Manuel Blanco Front End Developer'
+    title: 'Home - Manuel Blanco Front End Developer',
+    script: [
+      { src: 'https://static.codepen.io/assets/embed/ei.js', async: true }
+    ]
   },
   components: {
     ICard: () => import('../components/Card.vue'),

@@ -55,6 +55,10 @@
       gap: 2rem;
       grid-template-columns: 1fr 1fr;
     }
+
+    #contact {
+      width: 94%;
+    }
   }
 }
 
@@ -70,6 +74,17 @@
   &#bottom-svg {
     bottom: 0;
     left: 0;
-    transform: translateY(118vh) translateX(-70rem);
+    transform: translateY(122vh) translateX(-70rem);
   }
+}
+
+.codepen.pen {
+  height: 343px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darken($primary--variant-1, 2%);
+  margin: 1em 0;
+  padding: 1em;
 }

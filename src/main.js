@@ -2,12 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
-import VueMeta from 'vue-meta'
-
-Vue.use(VueMeta)
+import plugins from './plugins'
 Vue.config.productionTip = false
 
 new Vue({
   router,
+  ...plugins,
   render: h => h(App)
 }).$mount('#app')
