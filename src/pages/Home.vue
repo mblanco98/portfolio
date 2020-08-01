@@ -1,17 +1,15 @@
 <template>
-  <div>
+  <div id="top">
     <div class="main-wrapper pl4 pr4 z-index4">
       <aside class="left">
         <i-greet />
-        <nav>
-          <a href="#pens">Pens</a>
-        </nav>
+        <i-navbar />
         <div class="relative social-bar-wrapper flex justify-content-flex-end">
           <i-social-bar class="social-bar" />
         </div>
       </aside>
       <div class="right">
-        <section id="work">
+        <section id="work" class="pt4">
           <header>
             <h1 class="title md mb10">
               Work
@@ -20,7 +18,7 @@
           <i-card v-for="(pr, i) in projects" :key="i" class="mb12 p8">
             <div>
               <header p0>
-                <h2 class="title fs-medium m0">
+                <h2 class="title fs-medium m0 highlight">
                   {{ pr.name }}
                 </h2>
               </header>
@@ -42,8 +40,10 @@
                 <header class="pt2 pb4 pl1">
                   <h2 class="title fs-medium m0">
                     <a :href="pen.src" target="_blank">
-                      {{ pen.name }}
-                      <fa :icon="['fas', 'external-link-alt']" />
+                      <span class="highlight">
+                        {{ pen.name }}
+                        <i class="eva eva-external-link-outline" />
+                      </span>
                     </a>
                   </h2>
                 </header>
@@ -61,10 +61,7 @@
                     >See the Pen
                     <a :href="pen.src" target="_blank" class="underline">
                       {{ pen.name }}
-                      <fa
-                        :icon="['fas', 'external-link-alt']"
-                        class="fs-small"
-                      />
+                      <i class="eva eva-external-link-outline" />
                     </a>
                     by mblanco (<a href="https://codepen.io/manAbl">{{
                       pen.user
@@ -83,7 +80,7 @@
         </div>
       </div>
     </div>
-    <svg-wrapper id="top-svg" class="svg">
+    <i-svg-wrapper id="top-svg" class="svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="2737.094"
@@ -96,8 +93,8 @@
           fill="#262626"
         />
       </svg>
-    </svg-wrapper>
-    <svg-wrapper id="bottom-svg" class="svg">
+    </i-svg-wrapper>
+    <i-svg-wrapper id="bottom-svg" class="svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -129,12 +126,13 @@
           />
         </g>
       </svg>
-    </svg-wrapper>
+    </i-svg-wrapper>
   </div>
 </template>
 
 <script>
 import { work, pens } from '../config'
+import 'eva-icons/style/eva-icons.css'
 
 export default {
   metaInfo: {
@@ -146,7 +144,8 @@ export default {
   components: {
     ICard: () => import('../components/Card.vue'),
     IGreet: () => import('../components/Greet.vue'),
-    SvgWrapper: () => import('../components/SvgWrapper'),
+    INavbar: () => import('../components/Navbar.vue'),
+    ISvgWrapper: () => import('../components/SvgWrapper'),
     ISocialBar: () => import('../components/SocialBar.vue')
   },
   computed: {

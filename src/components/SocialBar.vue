@@ -8,6 +8,7 @@
       </div>
       <a v-else :href="item.link" target="_blank">
         {{ item.label }}
+        <i class="eva eva-external-link-outline" />
       </a>
     </div>
   </nav>

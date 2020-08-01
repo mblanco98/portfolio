@@ -1,7 +1,11 @@
 <template>
   <div>
     <h1 class="title lg">
-      {{ `${description.greeting}` }} <br />
+      <span class="highlight">
+        Hello,
+      </span>
+      I'm
+      <br />
       {{ `${description.name}` }}.
     </h1>
     <p v-html="description.presentation" />
