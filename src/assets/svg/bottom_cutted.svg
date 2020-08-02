@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg855"
+   version="1.1"
+   viewBox="0 0 2000 2000"
+   height="2000"
+   width="2000">
+  <metadata
+     id="metadata859">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs849">
+    <filter
+       filterUnits="userSpaceOnUse"
+       height="2691.165"
+       width="2708.384"
+       y="0"
+       x="0"
+       id="a">
+      <feOffset
+         id="feOffset838"
+         input="SourceAlpha"
+         dy="10" />
+      <feGaussianBlur
+         id="feGaussianBlur840"
+         result="b"
+         stdDeviation="6" />
+      <feFlood
+         id="feFlood842"
+         flood-opacity="0.89"
+         flood-color="#212121" />
+      <feComposite
+         result="result1"
+         id="feComposite844"
+         in2="b"
+         operator="in" />
+      <feComposite
+         id="feComposite846"
+         in2="result1"
+         in="SourceGraphic" />
+    </filter>
+  </defs>
+  <path
+     id="path865-5"
+     d="m 567.02929,12.413976 c -6.0021,-0.066 -12.0952,0.9941 -18.291,3.296801 -236.4338,87.879703 -406.78141,97.143503 -537.208922,78.6543 V 530.89038 H 1300.4063 C 1225.7028,419.65268 1102.7918,367.68708 913.12309,442.71458 773.35639,480.83728 689.07169,13.750976 567.02929,12.413976 Z"
+     style="fill:#262626;stroke-width:0.99724621" />
+</svg>

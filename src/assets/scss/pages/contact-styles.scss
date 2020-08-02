@@ -63,8 +63,15 @@
   position: absolute;
   top: 1rem;
   left: 44.3vw;
+  overflow: hidden;
   transition: scale $transition-regular;
   &:hover {
     transform: scale(1.1);
+  }
+  @media screen and (max-width: 90em) {
+    left: 44vw;
+  }
+  @media screen and (max-width: 50em) {
+    left: 43.4vw;
   }
 }

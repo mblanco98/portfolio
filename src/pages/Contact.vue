@@ -92,8 +92,35 @@ import { contact } from '../config'
 
 export default {
   name: 'Contact',
-  metaInfo: {
-    title: 'Contact - Manuel Blanco Front End Developer'
+  head: {
+    title: 'Contact | Manuel Blanco - Software Developer',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Manuel Blanco | Contact Page | Software Engineer at Infrapedia Inc. | Creative Developer | Node, JavaScript, Vue.js, CSS, React'
+      },
+      {
+        name: 'author',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'designer',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:title',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:site_name',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:image',
+        content: 'https://dev.manuelblancodev.com/manuel-blanco.jpg'
+      }
+    ]
   },
   components: {
     SvgWrapper: () => import('../components/SvgWrapper')

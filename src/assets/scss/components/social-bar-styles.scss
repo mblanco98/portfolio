@@ -10,8 +10,7 @@
       background-color: slategrey;
     }
   }
-
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 22.5em) {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid $primary--variant-2;
   }

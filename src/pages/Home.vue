@@ -1,10 +1,10 @@
 <template>
   <div id="top">
     <div class="main-wrapper pl4 pr4 z-index4">
-      <i-navbar class="hidden-md-and-up mobile-nav" />
+      <i-navbar class="hidden-md-and-up mobile-nav" id="mobile-nav" />
       <aside class="left">
         <i-greet />
-        <i-navbar class="hidden-md-and-down" />
+        <i-navbar class="hidden-md-and-down" id="nav" />
         <div
           class="relative social-bar-wrapper flex justify-content-flex-end hidden-md-and-down"
         >
@@ -99,35 +99,60 @@
     </i-svg-wrapper>
     <i-svg-wrapper id="bottom-svg" class="svg hidden-md-and-down">
       <svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="2708.384"
-        height="2691.165"
-        viewBox="0 0 2708.384 2691.165"
+        id="svg855"
+        version="1.1"
+        viewBox="0 0 2000 2000"
+        height="2000"
+        width="2000"
       >
-        <defs>
+        <metadata id="metadata859">
+          <rdf:RDF>
+            <cc:Work rdf:about="">
+              <dc:format>image/svg+xml</dc:format>
+              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+              <dc:title></dc:title>
+            </cc:Work>
+          </rdf:RDF>
+        </metadata>
+        <defs id="defs849">
           <filter
-            id="a"
-            x="0"
-            y="0"
-            width="2708.384"
-            height="2691.165"
             filterUnits="userSpaceOnUse"
+            height="2691.165"
+            width="2708.384"
+            y="0"
+            x="0"
+            id="a"
           >
-            <feOffset dy="10" input="SourceAlpha" />
-            <feGaussianBlur stdDeviation="6" result="b" />
-            <feFlood flood-color="#212121" flood-opacity="0.89" />
-            <feComposite operator="in" in2="b" />
-            <feComposite in="SourceGraphic" />
+            <feOffset id="feOffset838" input="SourceAlpha" dy="10" />
+            <feGaussianBlur
+              id="feGaussianBlur840"
+              result="b"
+              stdDeviation="6"
+            />
+            <feFlood
+              id="feFlood842"
+              flood-opacity="0.89"
+              flood-color="#212121"
+            />
+            <feComposite
+              result="result1"
+              id="feComposite844"
+              in2="b"
+              operator="in"
+            />
+            <feComposite id="feComposite846" in2="result1" in="SourceGraphic" />
           </filter>
         </defs>
-        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#a)">
-          <path
-            d="M731.5-152.919C793.11-280.192,1213.156,34.108,1291.57-96.591,1592-751.683,2386.316,309.712,2206.491,380.437c-220.373,86.673-664.308,845.412-1213,845.412S0,953.61,0,617.786,396.682,538.78,731.5-152.919Z"
-            transform="matrix(0.72, 0.69, -0.69, 0.72, 869.55, 230.41)"
-            fill="#262626"
-          />
-        </g>
+        <path
+          id="path865-5"
+          d="m 567.02929,12.413976 c -6.0021,-0.066 -12.0952,0.9941 -18.291,3.296801 -236.4338,87.879703 -406.78141,97.143503 -537.208922,78.6543 V 530.89038 H 1300.4063 C 1225.7028,419.65268 1102.7918,367.68708 913.12309,442.71458 773.35639,480.83728 689.07169,13.750976 567.02929,12.413976 Z"
+          style="fill:#262626;stroke-width:0.99724621"
+        />
       </svg>
     </i-svg-wrapper>
   </div>
@@ -138,8 +163,35 @@ import { work, pens } from '../config'
 import 'eva-icons/style/eva-icons.css'
 
 export default {
-  metaInfo: {
-    title: 'Home - Manuel Blanco Front End Developer',
+  head: {
+    title: 'Home | Manuel Blanco - Software Developer',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Manuel Blanco | Software Engineer at Infrapedia Inc. | Creative Developer | Node, JavaScript, Vue.js, CSS, React'
+      },
+      {
+        name: 'author',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'designer',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:title',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:site_name',
+        content: 'Manuel Blanco'
+      },
+      {
+        name: 'og:image',
+        content: 'https://dev.manuelblancodev.com/manuel-blanco.jpg'
+      }
+    ],
     script: [
       { src: 'https://static.codepen.io/assets/embed/ei.js', async: true }
     ]
