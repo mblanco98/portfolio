@@ -3,9 +3,12 @@
 .i-card {
   background-color: $primary--variant-1;
   max-width: 58.69rem;
+  .title {
+    font-size: 1.45em;
+  }
   &:not(.i-card__inner) {
     &.md {
-      max-width: 25.32rem;
+      max-width: 28.89rem;
     }
     transition: transform 120ms ease-in;
     &:hover {

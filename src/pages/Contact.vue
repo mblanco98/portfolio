@@ -66,14 +66,14 @@
       <!-- <img src="https://media.giphy.com/media/3o7TKo69Ajc6LuzOs8/giphy.gif" /> -->
       <div id="gifWrapper" class="text-center">
         <img src="https://media.giphy.com/media/3o7bukPWLMVsRz38J2/giphy.gif" />
-        <h1 class="title lg text-white">
+        <h1 class="title text-white">
           Say hi.
           <span class="highlight">Like this guy.</span>
         </h1>
-        <div class="inline-block">
+        <div class="inline-block button-link">
           <a
             :href="`mailto:${contactData.email}`"
-            class="button-link border-gray-100 text-center font-semibold inverse"
+            class="text-center font-semibold inverse"
           >
             {{ contactData.email }}
             <i
@@ -135,7 +135,7 @@ export default {
     }
   },
   mounted() {
-    this.enterAnimation()
+    if (window.innerWidth > 980) this.enterAnimation()
   },
   methods: {
     enterAnimation() {

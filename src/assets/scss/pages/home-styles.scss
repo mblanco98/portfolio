@@ -102,6 +102,11 @@
       right: 0;
       top: 6.7rem;
       max-height: 128em;
+      .pens-wrapper {
+        .title {
+          font-size: 1.025em;
+        }
+      }
     }
     @media screen and (min-width: 64em) and (orientation: portrait) {
       position: static;

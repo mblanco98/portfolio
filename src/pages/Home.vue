@@ -25,7 +25,7 @@
                   {{ pr.name }}
                 </h2>
               </header>
-              <p class="text-justify">
+              <p class="text-justify fs-regular">
                 {{ pr.content }}
               </p>
             </div>
