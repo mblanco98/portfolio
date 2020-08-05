@@ -1,5 +1,5 @@
 <template>
-  <div class="i-card p2" :class="{ md }" role="textbox">
+  <div class="i-card p2" :class="{ md }" aria-label="card">
     <div class="i-card i-card__inner">
       <slot />
     </div>

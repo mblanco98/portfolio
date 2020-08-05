@@ -1,10 +1,18 @@
 <template>
   <div id="top">
-    <div aria-hidden="true" class="overlay-1 shadow-top" />
-    <div aria-hidden="true" class="overlay-2 shadow-bottom" />
+    <div
+      class="overlay-1 shadow-top"
+      role="presentation"
+      aria-describedby="top shadow, this is for creating a smooth sense of content disapearing when scrolling down"
+    />
+    <div
+      class="overlay-2 shadow-bottom"
+      role="presentation"
+      aria-describedby="bottom shadow, this is for creating a smooth sense of content disapearing when scrolling up"
+    />
     <div class="main-wrapper pl4 pr4 z-index4">
       <i-navbar class="hidden-md-and-up mobile-nav" id="mobile-nav" />
-      <aside class="left">
+      <aside class="left" role="region">
         <i-greet />
         <i-navbar class="hidden-md-and-down" id="nav" />
         <div
@@ -14,7 +22,7 @@
         </div>
       </aside>
       <div class="right">
-        <section id="work">
+        <section id="work" role="contentinfo">
           <header>
             <h1 class="title md mb10">
               Work
@@ -33,7 +41,7 @@
             </div>
           </i-card>
         </section>
-        <section id="pens" class="mt12 pt4">
+        <section id="pens" class="mt12 pt4" role="contentinfo">
           <header>
             <h1 class="title md mb10">
               Pens

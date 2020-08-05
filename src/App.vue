@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="app"
-    aria-roledescription="This is a simple container for the application"
-  >
+  <div id="app" role="application">
     <transition
       tag="div"
       aria-hidden="true"
