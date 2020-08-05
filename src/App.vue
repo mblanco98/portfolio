@@ -1,7 +1,11 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    aria-roledescription="This is a simple container for the application"
+  >
     <transition
       tag="div"
+      aria-hidden="true"
       mode="out-in"
       name="animated faster"
       leave-active-class="fadeOut"

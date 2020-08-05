@@ -1,6 +1,8 @@
 <template>
   <div
     class="svg-wrapper"
+    aria-hidden="true"
+    role="presentation"
     :class="{
       ...customClass,
       md: size == 'md',

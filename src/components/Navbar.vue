@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-wrapper flex column wrap">
+  <nav class="nav-wrapper flex column wrap" role="navigation">
     <div
       v-for="(link, i) in links"
       :key="link.label"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title lg">
+    <h1 class="title lg" role="heading">
       <span class="highlight">
         Hello,
       </span>
