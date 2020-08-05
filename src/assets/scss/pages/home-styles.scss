@@ -7,27 +7,6 @@
   width: 86vw;
   // @extend .debug;
 
-  &::after {
-    background-color: darken($primary, 12%);
-    filter: blur(12px);
-    position: fixed;
-    height: 12px;
-    width: 100%;
-    content: ' ';
-    bottom: 0;
-    left: 0;
-  }
-  &::before {
-    background-color: darken($primary, 12%);
-    filter: blur(12px);
-    position: fixed;
-    height: 12px;
-    width: 100%;
-    content: ' ';
-    left: 0;
-    top: -4px;
-  }
-
   .divider {
     position: relative;
     grid-column: 1 / 4;
@@ -205,4 +184,35 @@
   border: 2px solid darken($primary--variant-1, 2%);
   margin: 1em 0;
   padding: 1em;
+}
+
+.overlay-1,
+.overlay-2 {
+  display: block;
+  position: fixed;
+  transform: translate3d(0px, -7.67334px, 0px);
+  pointer-events: none;
+  z-index: 24;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+
+.overlay-1.shadow-top {
+  top: 0;
+  height: 2%;
+  background: linear-gradient(
+    180deg,
+    $primary--variant-3 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.overlay-2.shadow-bottom {
+  height: 4%;
+  bottom: -0.8rem;
+  background: linear-gradient(
+    360deg,
+    $primary--variant-3 0,
+    rgba(0, 0, 0, 0) 100%
+  );
 }

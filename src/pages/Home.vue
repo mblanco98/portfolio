@@ -1,5 +1,7 @@
 <template>
   <div id="top">
+    <div aria-hidden="true" class="overlay-1 shadow-top" />
+    <div aria-hidden="true" class="overlay-2 shadow-bottom" />
     <div class="main-wrapper pl4 pr4 z-index4">
       <i-navbar class="hidden-md-and-up mobile-nav" id="mobile-nav" />
       <aside class="left">

@@ -4,7 +4,9 @@
       v-for="(link, i) in links"
       :key="link.label"
       class="link mb4 transition-all"
-      :class="{ active: $route.hash == link.to }"
+      :class="{
+        active: $route.hash == link.to
+      }"
     >
       <a :href="link.to" class="inline-block">
         0{{ i }}
