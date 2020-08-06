@@ -38,6 +38,16 @@
               <p class="text-justify fs-regular">
                 {{ pr.content }}
               </p>
+              <footer class="flex row nowrap justify-content-end">
+                <a
+                  target="_blank"
+                  :href="pr.link"
+                  class="underline cursor-pointer"
+                >
+                  Visit website
+                  <i class="eva eva-external-link-outline" />
+                </a>
+              </footer>
             </div>
           </i-card>
         </section>
