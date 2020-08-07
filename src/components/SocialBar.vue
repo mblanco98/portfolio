@@ -5,7 +5,11 @@
   >
     <div v-for="(item, i) in socialLinks" :key="i">
       <div v-if="item.photo" class="logo-wrapper">
-        <div class="img" />
+        <div class="img circle">
+          <picture>
+            <img :src="imgSrc" class="w-fit-full circle" />
+          </picture>
+        </div>
       </div>
       <a v-else :href="item.link" target="_blank">
         {{ item.label }}
@@ -23,6 +27,9 @@ export default {
   computed: {
     socialLinks() {
       return social
+    },
+    imgSrc() {
+      return '/mb.jpg'
     }
   }
 }

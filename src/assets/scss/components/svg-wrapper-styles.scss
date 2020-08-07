@@ -1,5 +1,6 @@
 .svg-wrapper {
   overflow: hidden;
+  pointer-events: none;
   &.sm {
     font-size: 18px;
     width: 18px;
