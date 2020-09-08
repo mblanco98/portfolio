@@ -181,41 +181,11 @@
 <script>
 import { work, pens } from '../config'
 import 'eva-icons/style/eva-icons.css'
+import metadata from '../config/metadata/home-metadata.json'
 
 export default {
-  head: {
-    title: 'Home | Manuel Blanco - Software Developer',
-    meta: [
-      {
-        name: 'description',
-        content:
-          'Manuel Blanco | Software Engineer at Infrapedia Inc. | Creative Developer | Node, JavaScript, Vue.js, CSS, React'
-      },
-      {
-        name: 'author',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'designer',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:title',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:site_name',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:image',
-        content: 'https://dev.manuelblancodev.com/manuel-blanco.jpg'
-      }
-    ],
-    script: [
-      { src: 'https://static.codepen.io/assets/embed/ei.js', async: true }
-    ]
-  },
+  name: 'Home',
+  head: metadata,
   components: {
     ICard: () => import('../components/Card.vue'),
     IGreet: () => import('../components/Greet.vue'),

@@ -1,0 +1,110 @@
+{
+  "title": "Contact Page | Manuel Blanco - Software Developer",
+  "meta": [
+    {
+      "vmid": "content-language",
+      "name": "content-language",
+      "content": "en-US"
+    },
+    {
+      "vmid": "author",
+      "name": "author",
+      "content": "en-US"
+    },
+    {
+      "vmid": "keywords",
+      "name": "keywords",
+      "content": "developer, software, engineer, frontend, front-end, front end, consulting, javascript, css, vue, vuejs, vue.js, react, contact"
+    },
+    {
+      "vmid": "description",
+      "name": "description",
+      "content": "Contact Page | Manuel Blanco | Software Engineer at Edgeuno | JavaScript, Vue.js, CSS"
+    },
+    {
+      "vmid": "image",
+      "name": "image",
+      "image": "<%= BASE_URL %>/img/site_screenshot.jpg"
+    },
+    {
+      "vmid": "og:url",
+      "name": "og:url",
+      "image": "https://www.manuelblancodev.com"
+    },
+    {
+      "vmid": "og:type",
+      "name": "og:type",
+      "image": "website"
+    },
+    {
+      "vmid": "og:title",
+      "name": "og:title",
+      "image": "Contact Page | Manuel Blanco - Software Developer at Edgeuno Inc"
+    },
+    {
+      "vmid": "og:description",
+      "name": "og:description",
+      "image": "Contact Page | Manuel Blanco | Software Engineer at Edgeuno | JavaScript, Vue.js, CSS"
+    },
+    {
+      "vmid": "og:image",
+      "name": "og:image",
+      "image": "<%= BASE_URL %>/img/site_screenshot.jpg"
+    },
+    {
+      "vmid": "twitter:site",
+      "name": "twitter:site",
+      "image": "@_manAbl"
+    },
+    {
+      "vmid": "twitter:site_name",
+      "name": "twitter:site_name",
+      "image": "Manuel Blanco - Software Developer at Edgeuno Inc"
+    },
+    {
+      "vmid": "twitter:card",
+      "name": "twitter:card",
+      "image": "summary_large_image"
+    },
+    {
+      "vmid": "twitter:title",
+      "name": "twitter:title",
+      "image": "Contact Page | Manuel Blanco - Software Developer at Edgeuno Inc"
+    },
+    {
+      "vmid": "twitter:description",
+      "name": "twitter:description",
+      "image": "Contact Page | Manuel Blanco | Software Engineer at Edgeuno | JavaScript, Vue.js, CSS"
+    },
+    {
+      "vmid": "twitter:image",
+      "name": "twitter:image",
+      "image": "<%= BASE_URL %>/img/site_screenshot.jpg"
+    }
+  ],
+  "script": [
+    {
+      "src": "https://static.codepen.io/assets/embed/ei.js",
+      "async": true
+    },
+    {
+      "type": "application/ld+json",
+      "json": {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Manuel Blanco",
+        "url": "https://www.manuelblancodev.com",
+        "image": "",
+        "sameAs": [
+          "https://www.linkedin.com/in/manabl/",
+          "https://twitter.com/_manAbl",
+          "https://www.instagram.com/mblanco._",
+          "https://www.youtube.com/channel/UCyhckQTgXCcQ2QyC9oRzzkw",
+          "https://github.com/manAbl",
+          "https://www.manuelblancodev.com"
+        ],
+        "jobTitle": "Software Developer at Egdeuno"
+      }
+    }
+  ]
+}

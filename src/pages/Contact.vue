@@ -89,39 +89,11 @@
 <script>
 import Scene from 'scenejs'
 import { contact } from '../config'
+import metadata from '../config/metadata/contact-metadata.json'
 
 export default {
   name: 'Contact',
-  head: {
-    title: 'Contact | Manuel Blanco - Software Developer',
-    meta: [
-      {
-        name: 'description',
-        content:
-          'Manuel Blanco | Contact Page | Software Engineer at Infrapedia Inc. | Creative Developer | Node, JavaScript, Vue.js, CSS, React'
-      },
-      {
-        name: 'author',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'designer',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:title',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:site_name',
-        content: 'Manuel Blanco'
-      },
-      {
-        name: 'og:image',
-        content: 'https://dev.manuelblancodev.com/manuel-blanco.jpg'
-      }
-    ]
-  },
+  head: metadata,
   components: {
     SvgWrapper: () => import('../components/SvgWrapper')
   },
