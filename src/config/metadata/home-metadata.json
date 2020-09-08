@@ -1,6 +1,16 @@
 {
   "title": "Home | Manuel Blanco - Software Developer",
+  "link": [
+    {
+      "rel": "canonical",
+      "href": "https://www.manuelblancodev.com"
+    }
+  ],
   "meta": [
+    {
+      "name": "application-name",
+      "content": "Manuel Blanco - Software Developer"
+    },
     {
       "vmid": "content-language",
       "name": "content-language",
