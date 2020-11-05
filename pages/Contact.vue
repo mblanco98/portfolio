@@ -34,7 +34,7 @@
         <span class="ml-4 highlight">:</span>
       </h1>
       <div class="information">
-        <h3 class="fs-medium font-regular highlight">Contact Details:</h3>
+        <h3 class="fs-medium font-regular highlight mb4">Contact Details:</h3>
         <a
           :href="`mailto:${contactData.email}`"
           class="font-thin text-md block margin1 hover:underline mb4"

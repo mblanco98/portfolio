@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-wrapper flex column wrap">
     <div
-      v-for="(link, i) in links"
+      v-for="link in links"
       :key="link.label"
       class="link mb4 transition-all"
       :class="{
@@ -9,7 +9,7 @@
       }"
     >
       <a :href="link.to" class="inline-block">
-        0{{ i }}
+        {{ link.binary }}
         <span class="label">
           {{ link.label }}
         </span>
