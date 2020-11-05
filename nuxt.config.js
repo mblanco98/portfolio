@@ -3,6 +3,9 @@ import metadata from './config/metadata/home-metadata.json'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+  loading: {
+    color: '#648dff',
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
