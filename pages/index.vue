@@ -177,7 +177,9 @@ export default {
       return pens
     },
   },
-  head: metadata,
+  head: {
+    ...metadata,
+  },
 }
 </script>
 
