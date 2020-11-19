@@ -5,7 +5,19 @@
       "rel": "canonical",
       "href": "https://www.manuelblancodev.com"
     },
-    { "rel": "icon", "type": "image/x-icon", "href": "img/icons/mstile-150x150.png" }
+    {
+      "rel": "icon",
+      "type": "image/x-icon",
+      "href": "img/icons/mstile-150x150.png"
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://fonts.gstatic.com"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500&display=swap"
+    }
   ],
   "meta": [
     {
