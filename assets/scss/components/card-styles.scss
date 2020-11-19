@@ -2,13 +2,18 @@
 
 .i-card {
   background-color: $primary--variant-1;
-  max-width: 58.69rem;
+  // max-width: 58.69rem;
   .title {
     font-size: 1.025em;
     @media screen and (min-width: 64em) {
       font-size: 1.45em;
     }
   }
+  p {
+    margin: .84rem 0;
+    text-align: left;
+  }
+
   &:not(.i-card__inner) {
     &.md {
       max-width: 28.89rem;

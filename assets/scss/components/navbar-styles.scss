@@ -46,7 +46,7 @@ $border-color: darken($text-color, 5%);
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     z-index: 4;
 
     display: flex;
@@ -70,9 +70,6 @@ $border-color: darken($text-color, 5%);
           margin-left: 0.4rem;
         }
       }
-    }
-    @media screen and (max-width: 25.875em) {
-      width: 84%;
     }
   }
 }

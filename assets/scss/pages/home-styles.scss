@@ -25,25 +25,13 @@
       align-self: end;
     }
 
-    @media screen and (min-width: 64em) {
+  @media screen and (min-width: $wp-lg) {
       position: fixed;
-      height: 65vh;
-      max-height: 48em;
       width: 20vw;
       top: 5rem;
-      display: grid;
+      min-height: 42rem;
       max-width: 22rem;
-    }
-    @media screen and (min-width: 64em) and (orientation: portrait) {
-      position: static;
-      width: 80vw;
-      left: 6%;
-      height: fit-content;
-      max-width: 90em;
-    }
-    @media screen and (min-width: 80em) {
       padding-bottom: 0;
-      height: 80vh;
       display: flex;
       flex-flow: column nowrap;
       width: 24%;
@@ -52,10 +40,8 @@
         width: 100%;
       }
     }
-    @media screen and (min-width: 240em) {
-      position: static;
-    }
   }
+
 
   .right {
     // @extend .debug;
@@ -63,69 +49,29 @@
     padding: 0;
 
     .pens-wrapper {
-      @media screen and (min-width: 46.25em) {
+      @media screen and (min-width: $wp-md) {
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
       }
     }
-    #contact {
-      width: 100%;
-      @media screen and (min-width: 82em) {
-        float: right;
-      }
-    }
 
-    @media screen and (min-width: 64em) {
-      position: absolute;
-      right: 0;
-      top: 6.7rem;
-      max-height: 128em;
+    @media screen and (min-width: $wp-lg) {
+      float: right;
+      width: 65%;
+      float: right;
       .pens-wrapper {
         .title {
           font-size: 1.025em;
         }
       }
     }
-    @media screen and (min-width: 64em) and (orientation: portrait) {
-      position: static;
-    }
-    @media screen and (min-width: 80em) {
-      width: 65%;
-      float: right;
-      padding-right: 0;
-    }
-    @media screen and (min-width: 240em) {
-      display: flex;
-      flex-flow: row nowrap;
-    }
   }
 
-  @media screen and (min-width: 90em) {
-    padding: 5.8rem 3rem;
+  @media screen and (min-width: $wp-lg) {
+    padding: 5.8rem 0;
     margin: 0 auto;
-    width: 90vw;
-    left: 10% !important;
-  }
-  @media screen and (min-width: 82em) {
-    padding: 5.8rem 3rem;
-    margin: 0 auto;
-    width: 90vw;
-    left: 6.5% !important;
-  }
-  @media screen and (min-width: 64em) {
-    position: absolute;
     width: 80vw;
-    left: 6%;
-    height: 100%;
-    max-width: 90em;
-  }
-  @media screen and (min-width: 64em) and (orientation: portrait) {
-    #mobile-nav {
-      display: flex !important;
-      width: 98%;
-      justify-content: space-around;
-    }
   }
 }
 
@@ -133,18 +79,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
   width: 70vw;
   overflow: hidden;
 
   &#top-svg {
     transform: translateY(-40.4rem) translateX(-24.89rem);
-
-    @media screen and (min-width: 240em) {
-      transform: translateY(-42.4rem) translateX(16rem);
-    }
-    @media screen and (min-width: 90em) {
-      transform: translateY(-38.4rem) translateX(-17.2rem);
+    @media screen and (min-width: $wp-lg) {
+      transform: translateY(-22rem) translateX(-21.2rem);
     }
   }
   &#bottom-svg {
@@ -153,26 +94,26 @@
     $c: 124vh * 2.4;
     transform: translateY($c) translateX(-12rem);
 
-    @media screen and (min-width: 240em) {
+    @media screen and (min-width: $wp-xlg * 1.4) {
       display: none;
     }
 
-    @media screen and (min-width: 92em) {
-      height: 45vh;
-      $c: 100vh * 2.4;
+    @media screen and (min-width: $wp-lg) {
+      height: 25vh;
+      $c: 82vh * 2.4;
       transform: translateY($c) translateX(-12rem);
       // transform: translateY(220vh) translateX(-12rem);
     }
-    @media screen and (min-width: 90em) {
-      height: 35vh;
-      $c: 86vh * 2.4;
-      transform: translateY($c) translateX(-12rem);
-    }
-    @media screen and (min-width: 82em) {
-      height: 45vh;
-      $c: 90vh * 2.4;
-      transform: translateY($c) translateX(-12rem);
-    }
+    // @media screen and (min-width: 90em) {
+    //   height: 35vh;
+    //   $c: 86vh * 2.4;
+    //   transform: translateY($c) translateX(-12rem);
+    // }
+    // @media screen and (min-width: 82em) {
+    //   height: 45vh;
+    //   $c: 90vh * 2.4;
+    //   transform: translateY($c) translateX(-12rem);
+    // }
   }
 }
 
@@ -193,7 +134,7 @@
   position: fixed;
   transform: translate3d(0px, -7.67334px, 0px);
   pointer-events: none;
-  z-index: 24;
+  z-index: 20;
   width: 100%;
   left: 0;
   opacity: 1;
