@@ -91,10 +91,10 @@ $border-default: 1px solid $border-color;
   justify-content: center;
   .item__text {
     color: #ccc;
-    font-size: 8em;
+    font-size: 4.4em;
     line-height: 1.2;
     @media screen and (min-width: 890px) {
-      font-size: 12em;
+      font-size: 8em;
     }
     @media screen and (min-width: 1024px) {
       font-size: 16em;
