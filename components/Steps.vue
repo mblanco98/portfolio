@@ -44,7 +44,11 @@ export default {
   },
   watch: {
     step(num) {
-      if (num === this.dataLength) this.$emit('done')
+      if (num === this.dataLength) {
+        setTimeout(() => {
+          this.$emit('done')
+        }, 4000)
+      }
     },
   },
   mounted() {
