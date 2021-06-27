@@ -5,6 +5,7 @@
   padding: 5.8rem 0;
   margin: 0 auto;
   width: 86vw;
+  padding-bottom: 10rem;
   // @extend .debug;
 
   .divider {
@@ -60,6 +61,7 @@
       float: right;
       width: 65%;
       float: right;
+      margin-bottom: 10rem;
       .pens-wrapper {
         .title {
           font-size: 1.025em;
@@ -76,7 +78,7 @@
 }
 
 .svg-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 70vw;
