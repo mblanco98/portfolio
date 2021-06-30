@@ -25,7 +25,7 @@
       align-self: end;
     }
 
-  @media screen and (min-width: $wp-lg) {
+    @media screen and (min-width: $wp-lg) {
       position: fixed;
       width: 20vw;
       top: 5rem;
@@ -41,7 +41,6 @@
       }
     }
   }
-
 
   .right {
     // @extend .debug;
@@ -76,7 +75,6 @@
 }
 
 .svg-wrapper {
-  position: absolute;
   top: 0;
   left: 0;
   width: 70vw;
@@ -87,33 +85,6 @@
     @media screen and (min-width: $wp-lg) {
       transform: translateY(-22rem) translateX(-21.2rem);
     }
-  }
-  &#bottom-svg {
-    width: 100%;
-    height: 45vh;
-    $c: 124vh * 2.4;
-    transform: translateY($c) translateX(-12rem);
-
-    @media screen and (min-width: $wp-xlg * 1.4) {
-      display: none;
-    }
-
-    @media screen and (min-width: $wp-lg) {
-      height: 25vh;
-      $c: 82vh * 2.4;
-      transform: translateY($c) translateX(-12rem);
-      // transform: translateY(220vh) translateX(-12rem);
-    }
-    // @media screen and (min-width: 90em) {
-    //   height: 35vh;
-    //   $c: 86vh * 2.4;
-    //   transform: translateY($c) translateX(-12rem);
-    // }
-    // @media screen and (min-width: 82em) {
-    //   height: 45vh;
-    //   $c: 90vh * 2.4;
-    //   transform: translateY($c) translateX(-12rem);
-    // }
   }
 }
 

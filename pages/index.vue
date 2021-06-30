@@ -2,7 +2,7 @@
   <div id="top">
     <div class="overlay-1 shadow-top" aria-hidden="true" />
     <div class="overlay-2 shadow-bottom" aria-hidden="true" />
-    <i-svg-wrapper id="top-svg" class="svg hidden-md-and-down">
+    <i-svg-wrapper id="top-svg" class="svg fixed hidden-md-and-down">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="fillContent"
@@ -16,67 +16,24 @@
         />
       </svg>
     </i-svg-wrapper>
-    <i-svg-wrapper id="bottom-svg" class="svg hidden-md-and-down">
-      <svg
-        id="svg855"
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:svg="http://www.w3.org/2000/svg"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="-24 -24 2000 2000"
-        height="fillContent"
-        width="fillContent"
-      >
-        <defs id="defs849">
-          <filter
-            id="a"
-            filterUnits="userSpaceOnUse"
-            height="2691.165"
-            width="2708.384"
-            y="0"
-            x="0"
-          >
-            <feOffset id="feOffset838" input="SourceAlpha" dy="10" />
-            <feGaussianBlur
-              id="feGaussianBlur840"
-              result="b"
-              stdDeviation="6"
-            />
-            <feFlood
-              id="feFlood842"
-              flood-opacity="0.89"
-              flood-color="#212121"
-            />
-            <feComposite
-              id="feComposite844"
-              result="result1"
-              in2="b"
-              operator="in"
-            />
-            <feComposite id="feComposite846" in2="result1" in="SourceGraphic" />
-          </filter>
-        </defs>
-        <path
-          id="path865-5"
-          d="m 567.02929,12.413976 c -6.0021,-0.066 -12.0952,0.9941 -18.291,3.296801 -236.4338,87.879703 -406.78141,97.143503 -537.208922,78.6543 V 530.89038 H 1300.4063 C 1225.7028,419.65268 1102.7918,367.68708 913.12309,442.71458 773.35639,480.83728 689.07169,13.750976 567.02929,12.413976 Z"
-          style="fill: #262626; stroke-width: 0.99724621"
-        />
-      </svg>
-    </i-svg-wrapper>
     <div class="main-wrapper pl4 pr4 relative">
       <i-navbar id="mobile-nav" class="hidden-lg-and-up mobile-nav" />
       <aside class="left" role="region">
         <i-greet />
         <i-navbar id="nav" class="hidden-md-and-down" />
         <div
-          class="relative social-bar-wrapper flex justify-content-flex-end hidden-md-and-down"
+          class="
+            relative
+            social-bar-wrapper
+            flex
+            justify-content-flex-end
+            hidden-md-and-down
+          "
         >
           <i-social-bar class="social-bar" />
         </div>
       </aside>
-      <div class="right">
+      <div class="right mb20 p0">
         <section id="work" role="contentinfo">
           <header>
             <h1 class="title md mb10">Work</h1>
