@@ -1,5 +1,5 @@
 const contact = {
-  email: 'work@manuelblancodev.com',
+  email: 'manblanco20@gmail.com',
   phone: '+57 305 364 8811',
 }
 
