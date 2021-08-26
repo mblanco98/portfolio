@@ -1,6 +1,6 @@
 {
   "name": "portfoliownuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -19,8 +19,8 @@
     }
   },
   "dependencies": {
-    "@animxyz/core": "^0.6.0",
-    "@animxyz/vue": "^0.6.1",
+    "@animxyz/core": "^0.6.4",
+    "@animxyz/vue": "^0.6.4",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",

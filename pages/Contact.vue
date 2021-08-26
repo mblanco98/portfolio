@@ -50,7 +50,6 @@
     </div>
     <div class="right">
       <div id="backgroundBlack" class="absolute" />
-      <!-- <img src="https://media.giphy.com/media/3o7TKo69Ajc6LuzOs8/giphy.gif" /> -->
       <div id="gifWrapper" class="text-center">
         <img src="https://media.giphy.com/media/3o7bukPWLMVsRz38J2/giphy.gif" />
         <h1 class="title text-white">
@@ -64,7 +63,14 @@
           >
             {{ contactData.email }}
             <i
-              class="icon margin-left-1rem transition inline-block fas arrow-right"
+              class="
+                icon
+                margin-left-1rem
+                transition
+                inline-block
+                fas
+                arrow-right
+              "
             />
           </a>
         </div>
